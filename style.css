@@ -1,0 +1,35 @@
+
+/*
+=================================================
+SEARCH
+=================================================
+*/
+form{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+}
+input{
+    width:100%;
+    font-size:32px;
+    margin:5px 0;
+    float:left;
+    border:none;
+    padding:10px;
+    outline:none;
+}
+.search-bar{
+    width:85%;
+    border-radius: 60px;
+    background-color: #686874;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+body {
+    background-color: #2e2e37;
+}
+.search-bar::placeholder {
+    color: #d4d4d4;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 25px;
+}
