@@ -1,35 +1,137 @@
-
 /*
 =================================================
 SEARCH
 =================================================
 */
-form{
-    width:100%;
-    max-width:600px;
-    margin:0 auto;
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
-input{
-    width:100%;
-    font-size:32px;
-    margin:5px 0;
-    float:left;
-    border:none;
-    padding:10px;
-    outline:none;
+
+input {
+    width: 100%;
+    font-size: 32px;
+    margin: 5px 0;
+    float: left;
+    border: none;
+    padding: 10px;
+    outline: none;
 }
-.search-bar{
-    width:110%;
+
+.search-bar {
+    width: 90%;
     border-radius: 60px;
-    background-color: #686874;
+    background-color: #2e2e37;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Inter';
+    font-size: 17px;
+    color: white;
+    font-weight: 200;
+    outline: 1.5pt solid #686874;
+    padding: 10px;
 }
+
 body {
     background-color: #2e2e37;
 }
+
 .search-bar::placeholder {
-    color: #d4d4d4;
+    color: #afafaf;
     font-family: 'Inter';
-    font-weight: 200;
-    font-size: 25px;
+    font-weight: 300;
+    font-size: 17px;
 }
+
+.search-bar:hover,
+.search-bar:focus {
+    outline: none;
+    background-color: #3d3d47;
+}
+
+h1 {
+    font-family: 'Inter';
+    color: rgb(206, 206, 206);
+    font-weight: 400;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 200px;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+    input {
+        font-size: 24px; /* Reduced font size for mobile */
+    }
+
+    .search-bar {
+        border-radius: 40px; /* Reduced border radius for mobile */
+        font-size: 14px; /* Reduced font size for mobile */
+    }
+
+    .search-bar::placeholder {
+        font-size: 14px; /* Reduced font size for mobile */
+    }
+
+    h1 {
+        font-size: 48px; /* Reduced font size for mobile */
+        margin-top: 100px; /* Adjusted margin for mobile */
+    }
+}
+/*
+=================================================
+BOOKMARKS
+=================================================
+*/
+/* Add this CSS for the bookmarks */
+.bookmarks a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.bookmarks {
+    padding: 30px;
+    clear: both;
+}
+
+.bookmarks i {
+    font-size: 42px;
+    margin: 0 20px;
+    color: #000000;
+    transition: .15s;
+    vertical-align: top;
+}
+
+.bookmarks i:hover {
+    font-size: 72px;
+    position: relative;
+}
+
+/* Add this CSS to make the image smaller */
+.bookmarks img {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    outline: 2px solid #686874; /* Add an outline around the image */
+    border-radius: 20px;
+    padding: 26px;
+    padding-top: 40px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+}
+
+/* Add this CSS to style the paragraph element */
+.bookmarks p {
+    margin-top: -30px; /* Adjust margin to be closer to the image */
+    color: #babac8; /* Set color to match the outline */
+    text-decoration: none; /* Remove decoration */
+    font-family: 'Inter';
+}
+
+.bookmarks img:hover {
+    transition: background-color 0.3s ease;
+}
+
