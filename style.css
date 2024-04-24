@@ -83,55 +83,56 @@ h1 {
 BOOKMARKS
 =================================================
 */
-/* Add this CSS for the bookmarks */
-.bookmarks a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.BookmarkContainer {
+    display: inline-block;
+    position: relative;
+    margin-top: 60px; /* Move the container lower */
+}
+
+.BookmarkButton {
+    position: relative;
+    display: block;
+    width: 80px; /* Set button width */
+    height: 80px; /* Set button height */
     text-align: center;
+    border-radius: 8px;
+    background-color: #2e2e37; /* Background color of the button */
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    outline: 1.7px solid #686874; /* Add outline with white color */
+}
+
+.ButtonBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #2e2e37; /* Set background color same as button */
+    z-index: -1; /* Behind the button content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ButtonImageContainer {
     position: relative;
+    z-index: 1; /* On top of the background */
+    text-align: center; /* Center the image horizontally */
 }
 
-.bookmarks {
-    padding: 30px;
-    clear: both;
+.ButtonImageContainer img {
+    max-width: 100%; /* Adjust image size */
+    max-height: 100%; /* Adjust image size */
+    display: block;
+    margin: auto; /* Center the image vertically */
 }
 
-.bookmarks i {
-    font-size: 42px;
-    margin: 0 20px;
-    color: #000000;
-    transition: .15s;
-    vertical-align: top;
+.ButtonText {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 14px; /* Adjust text size */
+    color: #e0e0e0; /* Text color */
+    margin-top: 8px; /* Adjust spacing between button and text */
 }
 
-.bookmarks i:hover {
-    font-size: 72px;
-    position: relative;
-}
-
-/* Add this CSS to make the image smaller */
-.bookmarks img {
-    width: 70px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    outline: 2px solid #686874; /* Add an outline around the image */
-    border-radius: 20px;
-    padding: 26px;
-    padding-top: 40px;
-    box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
-}
-
-/* Add this CSS to style the paragraph element */
-.bookmarks p {
-    margin-top: -30px; /* Adjust margin to be closer to the image */
-    color: #babac8; /* Set color to match the outline */
-    text-decoration: none; /* Remove decoration */
-    font-family: 'Inter';
-}
-
-.bookmarks img:hover {
-    transition: background-color 0.3s ease;
-}
 
