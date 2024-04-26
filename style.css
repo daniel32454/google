@@ -99,7 +99,7 @@ BOOKMARKS
     background-color: #2e2e37; /* Background color of the button */
     text-decoration: none;
     color: #ffffff; /* Text color */
-    outline: 1.7px solid #686874; /* Add outline with white color */
+    outline: 1.5pt solid #686874; /* Add outline with white color */
 }
 
 .ButtonBackground {
@@ -111,7 +111,7 @@ BOOKMARKS
     border-radius: 10px;
     background-color: #2e2e37; /* Set background color same as button */
     z-index: -1; /* Behind the button content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .ButtonImageContainer {
